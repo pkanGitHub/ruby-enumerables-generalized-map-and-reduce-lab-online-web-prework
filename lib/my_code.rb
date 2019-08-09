@@ -11,7 +11,7 @@ end
 
 def reduce(array, starting_point=0)
   array.length.times do |i|
-    starting_point = yield(starting_point, array[i])
+    sum = yield(starting_poin, array[i])
   end
-  starting_point
+  sum
 end
